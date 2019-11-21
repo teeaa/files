@@ -1,5 +1,7 @@
 {
     "workbench.colorTheme": "Night Owl",
+    "window.titleBarStyle": "custom",
+    "window.nativeTabs": false,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.autoClosingBrackets": "never",
@@ -7,6 +9,8 @@
     "workbench.startupEditor": "newUntitledFile",
     "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
     "workbench.colorCustomizations": {
+        "editorGutter.modifiedBackground": "#7c7400",
+        "editorGutter.addedBackground": "#008000",
         "tab.activeBackground": "#2e002eef",
         "tab.inactiveBackground": "#09001b",
         "sideBar.background": "#0e0014",
@@ -63,8 +67,19 @@
     "workbench.activityBar.visible": true,
     "update.mode": "manual",
     "files.associations": {
-        "*.inc": "php"
+        "*.inc": "php",
+        "*.module": "php",
+    },
+    "material-icon-theme.files.associations": {
+        "*.php": "php_elephant",
+        "*.inc": "php_elephant",
+        "*.module": "php_elephant",
     },
     "window.nativeFullScreen": false,
-    "references.preferredLocation": "view"
+    "references.preferredLocation": "view",
+    "workbench.statusBar.visible": true,
+    "extensions.autoCheckUpdates": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.iconTheme": "material-icon-theme"
 }
