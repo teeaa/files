@@ -8,6 +8,16 @@
     "editor.autoClosingQuotes": "never",
     "workbench.startupEditor": "newUntitledFile",
     "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+            "scope": "punctuation.section.embedded",
+            "settings": {
+                "foreground": "#ffffff88"
+                }
+            }
+        ]
+    },
     "workbench.colorCustomizations": {
         "gitlens.trailingLineBackgroundColor": "#210031",
         "gitlens.trailingLineForegroundColor": "#afafaf80",
