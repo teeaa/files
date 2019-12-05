@@ -3,6 +3,9 @@
     "window.titleBarStyle": "custom",
     "window.nativeTabs": false,
     "editor.suggestSelection": "first",
+    "editor.autoSurround": "never",
+    "editor.autoClosingOvertype": "never",
+    "editor.trimAutoWhitespace": true,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
@@ -81,12 +84,35 @@
     "files.associations": {
         "*.inc": "php",
         "*.module": "php",
+        "*.tlx": "php",
     },
     "material-icon-theme.files.associations": {
         "*.php": "php_elephant",
         "*.inc": "php_elephant",
         "*.module": "php_elephant",
+        "*.tlx": "php_elephant",
     },
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.snippetSuggestions": "none",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        }
+    },
+    "gopls": {
+        "usePlaceholders": true, // add parameter placeholders when completing a function
+        // Experimental settings
+        "completeUnimported": true, // autocomplete unimported packages
+        "watchFileChanges": true,  // watch file changes outside of the editor
+        "deepCompletion": true,     // enable deep completion
+    },
+    "go.lintTool":"golangci-lint",
+    "go.lintFlags": [
+        "--fast",
+        "--config=~/.golangci.json"
+    ],
+    "files.eol": "\n", // formatting only supports LF line endings
     "window.nativeFullScreen": false,
     "references.preferredLocation": "view",
     "workbench.statusBar.visible": true,
@@ -96,5 +122,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "scm.alwaysShowProviders": true,
     "scm.defaultViewMode": "tree",
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": true,
+    "editor.renderControlCharacters": true,
+    "extensions.ignoreRecommendations": true
 }
